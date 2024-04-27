@@ -7,6 +7,7 @@ public class GunScript : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 10f;
+    public ParticleSystem qq;
     public Camera PlayerCamera;
     public AudioSource wee;
 
@@ -23,11 +24,13 @@ public class GunScript : MonoBehaviour
     }
     public void Shoot()
     {
+        qq.Play();
+        wee.Play();
         RaycastHit hit;
         if(Physics.Raycast(PlayerCamera.transform.position,PlayerCamera.transform.forward,out hit, range))
         {
             Debug.Log(hit.transform.name);
-            wee.Play();
+           
         }
     }
 }
