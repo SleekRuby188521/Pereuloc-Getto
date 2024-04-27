@@ -13,7 +13,7 @@ public class CameraRotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -28,5 +28,6 @@ public class CameraRotation : MonoBehaviour
 
         newAngleX = Mathf.Clamp(newAngleX, minAngle, maxAngle);
         CameraAxisTransform.localEulerAngles = new Vector3(newAngleX, 0, 0);
+       
     }
 }
