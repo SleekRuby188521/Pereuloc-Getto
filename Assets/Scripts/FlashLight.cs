@@ -6,6 +6,7 @@ public class FlashLight : MonoBehaviour
 {
     [SerializeField] Light _flashLight;
     [SerializeField] AudioSource _xzKakNazzvat;
+    [SerializeField] Light _flashLightq;
     void Start()
     {
         
@@ -17,6 +18,7 @@ public class FlashLight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             _flashLight.enabled = !_flashLight.enabled;
+            _flashLightq.enabled = !_flashLightq.enabled;
             _xzKakNazzvat.Play();
         }
     }
