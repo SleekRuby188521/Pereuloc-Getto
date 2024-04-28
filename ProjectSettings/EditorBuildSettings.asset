@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Pavel.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 397156ee9033c954690b127dd9a540e2
   - enabled: 1
-    path: Assets/Scenes/pawel53.unity
-    guid: 9f9ec6377c43db447acb790fbf737797
+    path: Assets/Scenes/GameplayScene.unity
+    guid: cf90a815b3f16eb41b53a3eeb41752df
   m_configObjects: {}
