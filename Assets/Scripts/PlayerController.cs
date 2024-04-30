@@ -40,12 +40,15 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             _moveVector += transform.right;
-            
+
+
+
         }
         if (Input.GetKey(KeyCode.A))
         {
             _moveVector -= transform.right;
-            
+ 
+
         }
     }
 
