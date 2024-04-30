@@ -14,4 +14,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameplayScene");
     }
+
+    public void QuitInGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
