@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerRoberry : MonoBehaviour
 {
+    
+    public GameObject player;
+
     public AudioSource audiosource;
     public AudioClip moneysound;
 
-    public GameObject target;
     void Update()
     {
-        if(Vector3.Distance(target.transform.position, transform.position) <= 3f && Input.GetKeyUp(KeyCode.E))
+        if(Vector3.Distance(player.transform.position, transform.position) <= 3f && Input.GetKeyUp(KeyCode.E))
         {
-            audiosource.PlayOneShot(moneysound);
+            audiosource.Play();
+            GetComponent<PlayerRoberry>().enabled = false;
+            
         }
     }
 }
