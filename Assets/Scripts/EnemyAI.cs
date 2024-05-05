@@ -6,19 +6,19 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
 
-    public List<Transform> patrolPoints;
+    
     public PlayerController player;
     public float viewAngle;
     public float damage = 30;
     private PlayerHealth _playerHealth;
 
-    private NavMeshAgent _navMeshAgent;
+    public NavMeshAgent _navMeshAgent;
     private bool _isPlayerNoticed;
     // Start is called before the first frame update
     private void Start()
     {
         InitComponentLinks();
-        PickNewPatrolPoint();
+        
     }
 
     private void InitComponentLinks()
@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
         NoticePlayerUpdate();
         ChaseUpdate();
         AttackUpdate();
-        PatrolUpdate();
+        
     }
 
     private void AttackUpdate()
@@ -75,19 +75,5 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void PatrolUpdate()
-    {
-        if (!_isPlayerNoticed)
-        {
-            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-            {
-                PickNewPatrolPoint();
-            }
-        }
-    }
 
-    private void PickNewPatrolPoint()
-    {
-        _navMeshAgent.destination = patrolPoints[Random.Range(0, patrolPoints.Count)].position;
-    }
 }
