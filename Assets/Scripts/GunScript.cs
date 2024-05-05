@@ -11,6 +11,7 @@ public class GunScript : MonoBehaviour
     public float impactForce;
     public Camera PlayerCamera;
     public AudioSource wee;
+    public ParticleSystem zxc;
 
     // Update is called once per frame
     void Update()
@@ -25,6 +26,7 @@ public class GunScript : MonoBehaviour
     public void Shoot()
     {
         wee.Play();
+        zxc.Play();
         RaycastHit hit;
         if(Physics.Raycast(PlayerCamera.transform.position,PlayerCamera.transform.forward,out hit, range))
         {
