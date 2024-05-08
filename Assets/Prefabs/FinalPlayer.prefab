@@ -457,6 +457,7 @@ MonoBehaviour:
   impactForce: 500
   PlayerCamera: {fileID: 4084910361474072435}
   wee: {fileID: 5790594990862644148}
+  zxc: {fileID: 0}
 --- !u!114 &4084910361474072441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,8 +508,8 @@ GameObject:
   - component: {fileID: 8740651209419637676}
   - component: {fileID: 3444970015592405813}
   m_Layer: 0
-  m_Name: PlayerWithFlashLightAndGun
-  m_TagString: Untagged
+  m_Name: FinalPlayer
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
