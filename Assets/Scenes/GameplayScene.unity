@@ -4444,6 +4444,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4084910361474072447, guid: 710437775a3f3c444b005b062578cb60,
+        type: 3}
+      propertyPath: zxc
+      value: 
+      objectReference: {fileID: 7265963758672587882, guid: c579c5cb239ada947819477e756b355a,
+        type: 3}
     - target: {fileID: 4084910362134648976, guid: 710437775a3f3c444b005b062578cb60,
         type: 3}
       propertyPath: speed
