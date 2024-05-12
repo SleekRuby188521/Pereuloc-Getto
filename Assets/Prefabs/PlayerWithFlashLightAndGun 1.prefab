@@ -1272,6 +1272,7 @@ GameObject:
   - component: {fileID: 6963696239783306855}
   - component: {fileID: 8225176784307751381}
   - component: {fileID: 2403100818419170654}
+  - component: {fileID: 6002353848465171364}
   m_Layer: 0
   m_Name: PlayerWithFlashLightAndGun 1
   m_TagString: Untagged
@@ -1434,6 +1435,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a14c597fc8c4f94eac37b2c481d5032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6002353848465171364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6963696239783306848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7d81b99332bda48b1a232c46dc8c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 6121927509144414778, guid: fd6694ace2e470a4394ec417ecf2266f,
+    type: 3}
+  grenadeSourceTransform: {fileID: 6963696240849067723}
+  force: 500
 --- !u!1 &6963696240464855438
 GameObject:
   m_ObjectHideFlags: 0
