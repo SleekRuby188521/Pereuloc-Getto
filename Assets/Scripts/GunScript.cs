@@ -11,9 +11,12 @@ public class GunScript : MonoBehaviour
     public float impactForce;
     public Camera PlayerCamera;
     public AudioSource wee;
-    public ParticleSystem zxc;
+    public Light MuzzleFlash;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         if (Input.GetMouseButton(0) && 1 <= fireRate)
@@ -26,7 +29,6 @@ public class GunScript : MonoBehaviour
     public void Shoot()
     {
         wee.Play();
-        zxc.Play();
         RaycastHit hit;
         if(Physics.Raycast(PlayerCamera.transform.position,PlayerCamera.transform.forward,out hit, range))
         {
@@ -41,5 +43,6 @@ public class GunScript : MonoBehaviour
                 healtht.TakeDamage(damage);
             }
         }
+
     }
 }
