@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerRoberry : MonoBehaviour
 {
-    public int playerMoney = 0;
+    public static float playerMoney = 0;
     public TextMeshProUGUI moneyValueTMP;
     public GameObject player;
 
@@ -17,7 +17,7 @@ public class PlayerRoberry : MonoBehaviour
         DrawUI();
     }
 
-    private void DrawUI()
+    public void DrawUI()
     {
         moneyValueTMP.text = playerMoney.ToString();
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrenadeCaster : MonoBehaviour
 {
-    public float grenadeCount = 5;
+    public static float grenadeCount = 5;
 
     public Rigidbody grenadePrefab;
     public Transform grenadeSourceTransform;

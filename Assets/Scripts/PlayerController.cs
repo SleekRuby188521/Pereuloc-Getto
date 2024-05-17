@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Transform player;
+    public static Transform player;
     
     public float speed = 0;
 

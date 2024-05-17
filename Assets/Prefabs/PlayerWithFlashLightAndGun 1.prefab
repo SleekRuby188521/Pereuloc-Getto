@@ -1501,7 +1501,7 @@ GameObject:
   - component: {fileID: 6002353848465171364}
   m_Layer: 0
   m_Name: PlayerWithFlashLightAndGun 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1596,7 +1596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67cc983e21ecb69488f842ea92bc2c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6963696239783306854}
   speed: 5
 --- !u!143 &6963696239783306849
 CharacterController:
@@ -1672,7 +1671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f7d81b99332bda48b1a232c46dc8c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grenadeCount: 5
   grenadePrefab: {fileID: 6121927509144414778, guid: fd6694ace2e470a4394ec417ecf2266f,
     type: 3}
   grenadeSourceTransform: {fileID: 6963696240849067723}
@@ -1799,6 +1797,7 @@ MonoBehaviour:
   impactForce: 500
   PlayerCamera: {fileID: 6963696240464855425}
   wee: {fileID: 596960010699722054}
+  MuzzleFlash: {fileID: 0}
 --- !u!114 &6963696240464855435
 MonoBehaviour:
   m_ObjectHideFlags: 0

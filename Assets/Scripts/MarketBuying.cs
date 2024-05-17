@@ -1,0 +1,59 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class MarketBuying : MonoBehaviour
+{
+    public Transform player;
+    public TextMeshProUGUI moneyValueTMP;
+
+    public GameObject aidkit;
+    public GameObject Playercamera;
+    void Start()
+    {
+        GetComponent<GrenadeCaster>();
+        GetComponent<PlayerRoberry>();
+        
+    }
+
+    
+    void Update()
+    {
+        GrenadeBuying();
+
+        AidkitBuying();
+    }
+
+    private void AidkitBuying()
+    {
+        if (Vector3.Distance(Playercamera.transform.position, transform.position) <= 5f && Input.GetKeyDown(KeyCode.G))
+        {
+            if (PlayerRoberry.playerMoney >= 4)
+            {
+                var Aidkit = Instantiate(aidkit);
+                Aidkit.transform.position = player.transform.position;
+                PlayerRoberry.playerMoney -= 4;
+                DrawUI();
+            }
+        }
+    }
+
+    private void GrenadeBuying()
+    {
+        if (Vector3.Distance(Playercamera.transform.position, transform.position) <= 5f && Input.GetKeyDown(KeyCode.F))
+        {
+            if (PlayerRoberry.playerMoney >= 3f)
+            {
+                GrenadeCaster.grenadeCount++;
+                PlayerRoberry.playerMoney -= 3f;
+                DrawUI();
+            }
+        }
+    }
+
+    private void DrawUI()
+    {
+        moneyValueTMP.text = PlayerRoberry.playerMoney.ToString();
+    }
+}
