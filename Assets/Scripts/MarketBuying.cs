@@ -7,6 +7,7 @@ public class MarketBuying : MonoBehaviour
 {
     public Transform player;
     public TextMeshProUGUI moneyValueTMP;
+    public TextMeshProUGUI grenadeCountText;
 
     public GameObject aidkit;
     public GameObject Playercamera;
@@ -46,6 +47,7 @@ public class MarketBuying : MonoBehaviour
             if (PlayerRoberry.playerMoney >= 3f)
             {
                 GrenadeCaster.grenadeCount++;
+                grenadeCountText.text = GrenadeCaster.grenadeCount.ToString();
                 PlayerRoberry.playerMoney -= 3f;
                 DrawUI();
             }

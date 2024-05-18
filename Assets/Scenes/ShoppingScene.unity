@@ -214,6 +214,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142216910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6084781790129726875, guid: 4d5df5e5038144e49bc717721872ca91,
+    type: 3}
+  m_PrefabInstance: {fileID: 801222025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &323648192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -707,6 +719,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2403100818419170654, guid: 4d5df5e5038144e49bc717721872ca91,
+        type: 3}
+      propertyPath: playerMoney
+      value: 
+      objectReference: {fileID: 1740071414}
+    - target: {fileID: 2403100818419170654, guid: 4d5df5e5038144e49bc717721872ca91,
+        type: 3}
+      propertyPath: grenadeCountText
+      value: 
+      objectReference: {fileID: 142216910}
+    - target: {fileID: 6002353848465171364, guid: 4d5df5e5038144e49bc717721872ca91,
+        type: 3}
+      propertyPath: grenadeCountText
+      value: 
+      objectReference: {fileID: 142216910}
     - target: {fileID: 6963696239783306848, guid: 4d5df5e5038144e49bc717721872ca91,
         type: 3}
       propertyPath: m_Name
@@ -1428,6 +1455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 344997354}
   moneyValueTMP: {fileID: 1740071414}
+  grenadeCountText: {fileID: 142216910}
   aidkit: {fileID: 1772810766}
   Playercamera: {fileID: 551445622}
 --- !u!1 &1666530478
