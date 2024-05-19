@@ -12,10 +12,13 @@ public class GunScript : MonoBehaviour
     public Camera PlayerCamera;
     public AudioSource wee;
     public Light MuzzleFlash;
+    public GameObject rev;
 
+ 
     private void Start()
     {
-        
+        MuzzleFlash.GetComponent<Light>();
+        MuzzleFlash.intensity = 0;
     }
     void Update()
     {
@@ -23,12 +26,19 @@ public class GunScript : MonoBehaviour
         {
             fireRate = q;
             Shoot();
+            MuzzleFlash.intensity = 5;
+        }
+        if (fireRate == 0f) 
+        {
+            MuzzleFlash.intensity = 0;
         }
         fireRate += Time.deltaTime;
     }
     public void Shoot()
     {
         wee.Play();
+ 
+        rev.GetComponent<Animator>().SetTrigger("Fire");
         RaycastHit hit;
         if(Physics.Raycast(PlayerCamera.transform.position,PlayerCamera.transform.forward,out hit, range))
         {
