@@ -5,8 +5,8 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     public GameObject PauseScreen;
-    public GameObject FireSound;
-    public GameObject Walk;
+    public GameObject Object1;
+    public GameObject Object2;
 
     public void Update()
     {
@@ -19,8 +19,8 @@ public class Pause : MonoBehaviour
     private void PauseInGame()
     {
         PauseScreen.SetActive(true);
-        FireSound.SetActive(false);
-        Walk.SetActive(false);
+        Object1.SetActive(false);
+        Object2.SetActive(false);
         GetComponent<PlayerController>().enabled = false;
     }
 }
