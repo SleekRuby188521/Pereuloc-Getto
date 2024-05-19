@@ -19,4 +19,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Pause()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }

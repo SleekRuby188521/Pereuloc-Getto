@@ -26197,12 +26197,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &767052217 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8228609413734053594, guid: 21e1a15f27a4c4f41a2c9fc57066e3d6,
-    type: 3}
-  m_PrefabInstance: {fileID: 8825145820609813989}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &778274573
 GameObject:
   m_ObjectHideFlags: 0
@@ -31209,7 +31203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 36ef2c3946cec714da20375cf9d8dd2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd3b3b6515aca79419c7e2a114d272d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -68331,7 +68325,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 767052217}
+      - m_Target: {fileID: 427623355}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -68356,6 +68350,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1896534274}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 313241624}
+        m_MethodName: Pause
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

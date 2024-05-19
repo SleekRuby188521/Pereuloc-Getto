@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class Pause : MonoBehaviour
 {
@@ -10,8 +11,10 @@ public class Pause : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.F1))
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             PauseInGame();
         }
     }
