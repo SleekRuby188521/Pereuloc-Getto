@@ -9,6 +9,8 @@ public class GunScript : MonoBehaviour
     public float fireRate = 0f;
     public float q = 0f;
     public float impactForce;
+    [SerializeField] float maxAmmo = 6f;
+    [SerializeField] float curAmmo;
     public Camera PlayerCamera;
     public AudioSource wee;
     public Light MuzzleFlash;
@@ -19,10 +21,11 @@ public class GunScript : MonoBehaviour
     {
         MuzzleFlash.GetComponent<Light>();
         MuzzleFlash.intensity = 0;
+        curAmmo = maxAmmo;
     }
     void Update()
     {
-        if (Input.GetMouseButton(0) && 1 <= fireRate)
+        if (Input.GetMouseButton(0) && 1 <= fireRate && curAmmo >0)
         {
             fireRate = q;
             Shoot();
@@ -37,7 +40,7 @@ public class GunScript : MonoBehaviour
     public void Shoot()
     {
         wee.Play();
- 
+        curAmmo--;
         rev.GetComponent<Animator>().SetTrigger("Fire");
         RaycastHit hit;
         if(Physics.Raycast(PlayerCamera.transform.position,PlayerCamera.transform.forward,out hit, range))
@@ -54,5 +57,16 @@ public class GunScript : MonoBehaviour
             }
         }
 
+    }
+    public void ReloadGun()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            Invoke("rel", 1);
+        }
+    }
+    void rel()
+    {
+        curAmmo = 6;
     }
 }
