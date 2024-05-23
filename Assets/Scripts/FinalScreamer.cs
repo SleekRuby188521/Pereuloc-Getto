@@ -9,6 +9,7 @@ public class FinalScreamer : MonoBehaviour
     public bool isActive = true;
 
     public GameObject monster;
+    public AudioSource screamerSound;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,8 +19,8 @@ public class FinalScreamer : MonoBehaviour
             {
                 isActive = false;
                 monster.SetActive(true);
-                StartCoroutine(Timer());  
-             
+                StartCoroutine(Timer());
+                screamerSound.Play();
             }
         }
     }

@@ -11,6 +11,8 @@ public class MarketBuying : MonoBehaviour
 
     public GameObject aidkit;
     public GameObject Playercamera;
+    public AudioSource Buying;
+    public AudioSource unBuying;
     void Start()
     {
         GetComponent<GrenadeCaster>();
@@ -36,6 +38,7 @@ public class MarketBuying : MonoBehaviour
                 Aidkit.transform.position = player.transform.position;
                 PlayerRoberry.playerMoney -= 4;
                 DrawUI();
+                Buying.Play();
             }
         }
     }
@@ -50,6 +53,7 @@ public class MarketBuying : MonoBehaviour
                 grenadeCountText.text = GrenadeCaster.grenadeCount.ToString();
                 PlayerRoberry.playerMoney -= 3f;
                 DrawUI();
+                Buying.Play();
             }
         }
     }
