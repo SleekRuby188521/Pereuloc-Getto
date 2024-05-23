@@ -19,23 +19,22 @@ public class GunScript : MonoBehaviour
  
     private void Start()
     {
-        
-        
         curAmmo = maxAmmo;
     }
     void Update()
     {
-        if (Input.GetMouseButton(0) && 1 <= fireRate && curAmmo >0)
+        if (Input.GetMouseButton(0) && 1 <= fireRate && curAmmo > 0)
         {
             fireRate = q;
             Shoot();
-            
+
         }
-        if (fireRate == 0f) 
+        if (fireRate == 0f)
         {
-            
+
         }
         fireRate += Time.deltaTime;
+        ReloadGun();
     }
     public void Shoot()
     {
@@ -63,10 +62,11 @@ public class GunScript : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
         {
             Invoke("rel", 1);
+            rev.GetComponent<Animator>().SetTrigger("Reload");
         }
     }
     void rel()
     {
-        curAmmo = 6;
+        curAmmo = maxAmmo;
     }
 }
