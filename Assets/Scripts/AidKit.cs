@@ -6,8 +6,11 @@ public class AidKit : MonoBehaviour
 {
     public float healAmount = 50;
 
+    public AudioSource aidKitSource;
+
     private void OnTriggerEnter(Collider other)
     {
+        Instantiate(aidKitSource);
         var playerHealth = other.gameObject.GetComponent<PlayerHealth>();
         if(playerHealth != null)
         {

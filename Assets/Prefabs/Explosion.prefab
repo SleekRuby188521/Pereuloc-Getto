@@ -110,7 +110,7 @@ MonoBehaviour:
   damage: 50
   maxSize: 8
   speed: 30
-  explosionSound: {fileID: 4833696950196326105, guid: 56bec7f4354267e4aa882fd4a4ef5362,
+  explosionSound: {fileID: 4561929645723657169, guid: 0559d00b1a7b7fc4980a57f0908fae40,
     type: 3}
 --- !u!54 &6981529543493825484
 Rigidbody:

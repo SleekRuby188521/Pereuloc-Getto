@@ -107,3 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healAmount: 50
+  aidKitSource: {fileID: 6972529296708685855, guid: 194655d7a11884441bef12f2ba43eb51,
+    type: 3}

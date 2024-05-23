@@ -13,14 +13,14 @@ public class GunScript : MonoBehaviour
     [SerializeField] float curAmmo;
     public Camera PlayerCamera;
     public AudioSource wee;
-    public Light MuzzleFlash;
+    
     public GameObject rev;
 
  
     private void Start()
     {
-        MuzzleFlash.GetComponent<Light>();
-        MuzzleFlash.intensity = 0;
+        
+        
         curAmmo = maxAmmo;
     }
     void Update()
@@ -29,11 +29,11 @@ public class GunScript : MonoBehaviour
         {
             fireRate = q;
             Shoot();
-            MuzzleFlash.intensity = 5;
+            
         }
         if (fireRate == 0f) 
         {
-            MuzzleFlash.intensity = 0;
+            
         }
         fireRate += Time.deltaTime;
     }
