@@ -11,6 +11,7 @@ public class GunScript : MonoBehaviour
     public float impactForce;
     [SerializeField] float maxAmmo = 6f;
     [SerializeField] float curAmmo;
+    public AudioSource Reload;
     public Camera PlayerCamera;
     public AudioSource wee;
     
@@ -63,6 +64,7 @@ public class GunScript : MonoBehaviour
         {
             Invoke("rel", 1);
             rev.GetComponent<Animator>().SetTrigger("Reload");
+            Reload.Play();
         }
     }
     void rel()
