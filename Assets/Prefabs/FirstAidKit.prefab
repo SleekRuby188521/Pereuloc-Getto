@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1871715855650873751}
   - component: {fileID: 4475835784139216221}
   - component: {fileID: 8105709653254731498}
+  - component: {fileID: 650642017125113774}
   m_Layer: 0
   m_Name: FirstAidKit
   m_TagString: Untagged
@@ -95,3 +96,16 @@ MonoBehaviour:
   healAmount: 50
   aidKitSource: {fileID: 6972529296708685855, guid: 194655d7a11884441bef12f2ba43eb51,
     type: 3}
+--- !u!65 &650642017125113774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2674470357216670856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07454633, y: 0.20049074, z: 0.057210386}
+  m_Center: {x: -0.0009487748, y: 0.100321546, z: 0.0014353752}
