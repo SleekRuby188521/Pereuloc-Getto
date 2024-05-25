@@ -35,7 +35,7 @@ public class FinalScreamer : MonoBehaviour
     {
         if(monster.activeInHierarchy)
         {
-            monster.transform.position += new Vector3(0, 0, -10 * Time.deltaTime * speed);
+            monster.transform.position += new Vector3(10 * Time.deltaTime * speed, 0, 0);
         }
     }
 }
